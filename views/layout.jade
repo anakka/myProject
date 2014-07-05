@@ -7,7 +7,7 @@ html(ng-app)
     block content
     <input type="text" ng-model="query">
     {{query}}
-    <div ng-include="'templates/nav.html'"></div>
+    div(ng-view)
   script(src="/js/build/production.min.js")
   script(src="/js/angular/angular.min.js")
   script(src="/js/angular/angular-route.min.js")
